@@ -1,0 +1,4 @@
+/mempress
+*.o
+plot_tests
+.DS_Store
