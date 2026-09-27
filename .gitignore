@@ -2,3 +2,4 @@
 *.o
 plot_tests
 .DS_Store
+/mempress_tests
