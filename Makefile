@@ -1,5 +1,5 @@
 CC      ?= cc
-CFLAGS  ?= -O2 -std=c11 -Wall -Wextra -Wpedantic
+CFLAGS  ?= -O2 -std=c11 -Wall -Wextra -Wpedantic -D_POSIX_C_SOURCE=200809L
 
 SRC = src/mempress.c src/main.c
 

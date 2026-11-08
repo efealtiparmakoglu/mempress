@@ -12,7 +12,9 @@
 #include <unistd.h>
 #endif
 
-#include <mach/mach.h> /* macOS RSS; Linux build falls back in main? */
+#if defined(__APPLE__)
+#include <mach/mach.h> /* macOS RSS; Linux uses the /proc fallback below. */
+#endif
 
 double mempress_now(void) {
     struct timespec ts;
